@@ -1,0 +1,102 @@
+
+
+1. Categorical Data
+a. Countplot
+b. PieChart
+
+
+2. Numerical Data
+a. Histogram
+b. Distplot
+c. Boxplot ---- gives outliers
+
+
+
+## LEARN
+SEABORN
+MATPLOT
+STTATISTICS -- HE HAS THESE PLAYLIST
+
+
+
+
+
+
+
+EDA Basics - Short Notes for Beginners
+1. What is EDA?
+Exploratory Data Analysis (EDA) = Understanding data before modeling.
+
+Goal: Find patterns, errors, and relationships in data.
+
+2. Why EDA?
+Detects missing values, outliers, errors.
+
+Helps select correct ML models.
+
+Improves feature engineering.
+
+3. Steps in EDA
+Data Summary → df.describe(), df.info().
+
+Check Missing Values → df.isnull().sum().
+
+Univariate Analysis → Histograms, Boxplots (for 1 variable).
+
+Bivariate Analysis → Scatter plots, Correlation matrix (2 variables).
+
+Multivariate Analysis → Heatmaps, Pair plots (3+ variables).
+
+4. Key Plots in EDA
+Numerical Data: Histogram, Boxplot, Scatter plot.
+
+Categorical Data: Bar chart, Pie chart, Countplot.
+
+Time-Series Data: Line plot, Rolling mean, Seasonality check.
+
+5. Common EDA Tools
+Python Libraries: Pandas, Matplotlib, Seaborn, Plotly.
+
+Auto-EDA Tools: pandas-profiling, Sweetviz.
+
+6. EDA for ML
+Feature Selection: Remove irrelevant features.
+
+Outlier Handling: Use IQR or Z-score.
+
+Data Transformation: Log, Normalization (if needed).
+
+1-Line Summary:
+"EDA = Data की सफाई + पैटर्न ढूँढो + सही Model चुनो!" 🚀
+
+
+
+
+################## MARATHI
+
+
+1. What is EDA?
+"Data की कहानी समझने का तरीका"
+
+Goal: Find patterns, errors, and relationships before modeling.
+
+2. Why EDA? (Need)
+Data समझो → Missing values, outliers, distributions.
+
+Model की performance बढ़ाओ (Better features = Better predictions).
+
+Wrong assumptions → Wrong results (EDA fixes this).
+
+3. History (Short)
+1977: John Tukey (Statistician) coined term "EDA".
+
+Pre-ML Era: Used in stats (mean, median, plots).
+
+Modern ML: Automated EDA (Pandas-profiling, Sweetviz).
+
+4. Types of EDA (Simple)
+Univariate → 1 variable (e.g., Bitcoin price distribution).
+
+Bivariate → 2 variables (e.g., Price vs Volume correlation).
+
+Multivariate → 3+ variables (e.g., Heatmaps, PCA).
