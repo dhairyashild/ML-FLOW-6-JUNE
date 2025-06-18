@@ -1,0 +1,50 @@
+23 feature eng
+
+Feature Scaling – Shortest Key Notes (Marathi)
+1. का गरज? (Why Needed)
+मोठ्या रेंज असलेल्या फीचर्समुळे मॉडेल बायस्ड होते; मोठ्या संख्यांना जास्त महत्त्व मिळते.
+
+KNN, SVM, Neural Networks सारख्या अल्गोरिदमसाठी स्केलिंग आवश्यक आहे; ते स्केल केलेल्या डेटावरच चांगले काम करतात.
+
+Gradient Descent वेगाने कॉन्व्हर्ज होतो, त्यामुळे ऑप्टिमायझेशन जलद होते.
+
+
+2. कधी वापरायचे? (When to Use?)
+डिस्टन्स-बेस्ड अल्गोरिदम: KNN, K-Means, SVM.
+
+ग्रेडियंट डिसेंट वापरणारे मॉडेल्स: Linear/Logistic Regression, Neural Networks.
+
+डायमेन्शन रिडक्शन (PCA) करताना.
+
+
+3. कधी नको? (When Not Needed?)
+ट्री-बेस्ड मॉडेल्स: Decision Tree, Random Forest, XGBoost – यांना स्केलिंगची गरज नाही.
+
+कॅटेगोरिकल डेटा: Gender, City Names – स्केलिंग लागू होत नाही.
+
+
+4. स्केलिंगचे प्रकार (Types)
+Min-Max Scaling: डेटा [0, मध्ये रूपांतरित करतो (MinMaxScaler).
+
+Standardization (Z-Score): Mean=0, Std=1 (StandardScaler).
+
+Robust Scaling: Median आणि IQR वापरतो; आउट्लायर्ससाठी योग्य.
+
+
+5. उदाहरण (Example)
+Original: वजन [50kg, 80kg, 120kg], उंची [150cm, 180cm, 200cm].
+
+Min-Max Scaled: वजन → [0, 0.43, 1], उंची → [0, 0.6, 1].
+
+
+6. 1-लाइन सारांश
+"सर्व फीचर्स एकाच स्केलवर नसतील, तर मॉडेल चुकीचे शिकेल; स्केलिंगमुळे सर्वांना समान महत्त्व मिळते".
+
+सर्वात महत्वाचे मुद्दे (Most Important Points)
+स्केलिंग केल्याने मॉडेल unbiased आणि accurate राहते.
+
+Distance-based आणि gradient-based अल्गोरिदमसाठी आवश्यक.
+
+ट्री-बेस्ड मॉडेल्ससाठी स्केलिंग गरजेचे नाही.
+
+Min-Max, Standardization, Robust Scaling – हे मुख्य प्रकार आहेत
