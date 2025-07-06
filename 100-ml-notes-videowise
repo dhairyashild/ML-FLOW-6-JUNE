@@ -1,0 +1,162 @@
+day19-understanding-your-data-descriptive-stats
+
+1. How big is the data?
+df.shape
+(891, 12)
+
+2. How does the data look like?
+df.sample(5)  = show random 5 row   
+===
+df.head(5) ==show top 5 so use sample over head
+
+3. What is the data type of cols?
+df.info()
+=== 
+non -null
+datatype 
+memory -usage
+--u can change age number which is imn float to int so less data used by integer (in large dataset not in small need)
+
+4. Are there any missing values?
+df.isnull().sum()
+====each coloumn made kiti missing ahet te dete
+Sex              0
+Age            177         ===yat 177 ahet missing
+
+
+5. How does the data look mathematically?
+df.describe()
+===
+min ,mean , max, total , 25% data avg ,50% avg , 75% avg
+
+6. Are there duplicate values?
+df.duplicated().sum()
+=0
+
+7. How is the correlation between cols?
+df.corr()['Survived']
+PassengerId   -0.005007 
+Survived       1.000000         === swatacha swatachya coloumn shi 1 asato relation
+-0.005007 
+===
+-0.005007 === negative value mean 1 value increase other decrease
+-0.005007 === positive mean 1 increase other also increases 
+
+
+
+
+################################################
+day20-univariate-analysis
+
+1. Categorical Data
+a. Countplot
+b. PieChart
+
+
+2. Numerical Data
+a. Histogram
+b. Distplot
+c. Boxplot ---- gives outliers
+
+
+
+## LEARN
+SEABORN
+MATPLOT
+STTATISTICS -- HE HAS THESE PLAYLIST
+
+#######################################################
+
+day21-bivariate-analysis
+
+
+#######################################################
+day22-pandas-profiling
+
+!pip install pandas-profiling
+
+
+from pandas_profiling import ProfileReport
+prof = ProfileReport(df)
+prof.to_file(output_file='output.html')
+
+===
+
+intraction = 2 rows comparison
+
+corelation= dark shade is more relation between 2 column
+
+missing values= deto
+
+GPT----which task done by profiling so avoid commands= 
+1- Basic data overview 
+2- Missing value detection
+3- outlier detection
+
+| Task                        | Pandas Profiling | Manual Commands Needed? |
+|-----------------------------|------------------|------------------------|
+| Basic data overview         | Yes              | No                     |
+| Missing value detection     | Yes              | No                     |
+| Outlier detection           | Yes              | No                     |
+| Deep data cleaning          | No               | Yes                    |
+| Custom business logic       | No               | Yes                    |
+| Large/complex data support  | Limited          | Sometimes              |
+
+
+
+#######################################################
+23
+scikit not work on missing values
+scikit dont work on categorical data, need numercaly converted data
+
+
+
+OUTLIERS = remove
+sharma ji ka beta 99.99 % marks ekatach
+
+FEATURE SCALING-=
+
+FEATURE CONSTRUCTION= CREATE NEW COLOUMN AS PER UR NEED (PARENT-CHILD FOR TITANIC)
+
+F EXTRACTION = ROOM+WASHROOM = AREA NAVACHA 1 GYA 
+
+############################################################
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
