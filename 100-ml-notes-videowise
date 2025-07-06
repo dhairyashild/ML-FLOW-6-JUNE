@@ -122,7 +122,15 @@ F EXTRACTION = ROOM+WASHROOM = AREA NAVACHA 1 GYA
 
 ############################################################
 
+35 
 
+CCA (Complete Case Analysis): 
+
+Only uses rows with no missing values for analysis.
+
+Use CCA if missing data is random and you have enough data left.
+
+CCA is simple but can reduce dataset size and cause bias if missingness is not random.
 
 
 
